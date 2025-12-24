@@ -1,0 +1,84 @@
+\documentclass[a4paper,12pt]{article}
+
+\usepackage{fontspec}
+\setmainfont{Times New Roman}
+
+\usepackage[a4paper,left=25mm,right=15mm,top=20mm,bottom=20mm]{geometry}
+\usepackage{graphicx}
+\usepackage{tikz}
+\usetikzlibrary{calc}
+
+\begin{document}
+	
+	% Tắt số trang để tránh trang rác
+	\pagenumbering{gobble}
+	
+	% ==================== TRANG BÌA ====================
+	\begin{titlepage}
+		\thispagestyle{empty}
+		
+		% Khung viền trang bìa
+		\begin{tikzpicture}[overlay,remember picture]
+			\draw [line width=3pt]
+			($ (current page.north west) + (2.5cm,-1.5cm) $)
+			rectangle
+			($ (current page.south east) + (-1.5cm,1.5cm) $);
+			\draw [line width=0.6pt]
+			($ (current page.north west) + (2.4cm,-1.6cm) $)
+			rectangle
+			($ (current page.south east) + (-1.4cm,1.6cm) $);
+		\end{tikzpicture}
+		
+		% Header trường/khoa
+		\begin{center}
+			\vspace{-6pt}
+			{\bfseries\fontsize{18pt}{22pt}\selectfont ĐẠI HỌC ĐÀ NẴNG}\par
+			{\bfseries\fontsize{18pt}{22pt}\selectfont TRƯỜNG ĐẠI HỌC BÁCH KHOA}\par
+			{\bfseries\fontsize{18pt}{22pt}\selectfont KHOA ĐIỆN TỬ - VIỄN THÔNG}\par
+		\end{center}
+		
+		\vspace{10pt}
+		
+		% Logo (đặt file logo.jpg cùng thư mục main.tex)
+		\begin{center}
+			\includegraphics[width=0.55\textwidth]{logo.jpg}
+		\end{center}
+		
+		\vspace{10pt}
+		
+		% Tiêu đề báo cáo
+		\begin{center}
+			{\bfseries\fontsize{30pt}{34pt}\selectfont BÁO CÁO CUỐI KÌ}\par
+			\vspace{22pt}
+			{\bfseries\fontsize{15pt}{18pt}\selectfont HỌC PHẦN: XỬ LÍ ẢNH}\par
+			\vspace{16pt}
+			{\bfseries\fontsize{15pt}{18pt}\selectfont Đề tài:}\par
+			\vspace{10pt}
+			
+			\begin{minipage}{0.85\textwidth}
+				\centering
+				{\bfseries\fontsize{18pt}{26pt}\selectfont
+					Phân vùng ảnh thú cưng bằng các phương pháp xử lý ảnh cổ điển (Otsu, K-means) trên bộ Oxford-IIIT Pet
+				}
+			\end{minipage}
+		\end{center}
+		
+		\vspace{24pt}
+		
+		% Thông tin sinh viên
+		\begin{flushleft}
+			\hspace{4cm}Sinh viên thực hiện \hspace{0.32cm}: Nguyễn Bá Thành -- Võ Đức Hiếu\\
+			\hspace{4cm}Lớp \hspace{2.95cm}: 21DTCLC4\\
+			\hspace{4cm}Nhóm \hspace{2.6cm}: 21.41\\
+			\hspace{4cm}Giảng viên \hspace{1.8cm}: TS. Hồ Phước Tiến\\
+		\end{flushleft}
+		
+		\vfill
+		
+		\begin{center}
+			\textit{Tháng 12 năm 2025}
+		\end{center}
+		
+	\end{titlepage}
+	
+\end{document}
