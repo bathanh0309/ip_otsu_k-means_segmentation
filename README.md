@@ -1,3 +1,2 @@
-<img src="https://github.com/bathanh0309/Scientific-Research-RRT-Yolov3/blob/main/Picture1.png"> 
-<img src="https://github.com/bathanh0309/Scientific-Research-RRT-Yolov3/blob/main/Picture1.png"> 
-<img src="https://github.com/bathanh0309/Scientific-Research-RRT-Yolov3/blob/main/Picture1.png"> 
+<img src="https://github.com/bathanh0309/ip_otsu_k-means_segmentation/blob/main/data/dice_iou.png"> 
+
