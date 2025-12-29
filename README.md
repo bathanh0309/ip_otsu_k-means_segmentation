@@ -1,5 +1,5 @@
 ## Phương pháp xử lí ảnh cổ điển Otsu / Kmeans 
-## Phân vùng dữ liệu ảnh thú cưng Oxford-IIITPet
+## Phân vùng dữ liệu ảnh thú cưng Oxford-IIIT Pet
 
 ```bash
 Thành viên: Nguyễn Bá Thành
